@@ -1,0 +1,10 @@
+<h1>Daftar siswa</h1>
+<% if (siswa.length<1) { %>
+<p>Daftar Siswa kosong</p>
+
+<% } else { %> <% siswa.forEach(s => { %>
+<ul>
+  <li>nama: <%= s.nama %></li>
+  <li>kelas: <%= s.kelas %></li>
+</ul>
+<% }) %> <% } %>
